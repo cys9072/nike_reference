@@ -1,0 +1,1528 @@
+/*깔끔 한글 폰트   font-family: 'Noto Sans KR', sans-serif; */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+/*커엽 한글 폰트 + 약간 고급에 어울림 font-family: 'Rubik', sans-serif; */
+@import url('https://fonts.googleapis.com/css2?family=Poor+Story&display=swap');
+/*깔끔 영어 폰트 */
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600&display=swap');
+/* 고오급 영어 폰트  font-family: 'Montserrat', sans-serif;*/
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400;1,500;1,600&display=swap');
+/* 각진 영어 폰트  font-family: 'Orbitron', sans-serif;*/
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@900&display=swap');
+/*필기체 영어 글씨 */
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+/* Dela Gothic One 두꺼운 영어 폰트 + 약간 고급 font-family: 'Dela Gothic One', cursive; */
+@import url('https://fonts.googleapis.com/css2?family=Dela+Gothic+One&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* border: 1px solid green; */
+  transition: 0.7s;
+  
+
+
+}
+
+img {
+  width: 100%;
+}
+
+body {
+  font-family: 'Noto Sans KR', sans-serif;
+
+  font-size: 0.9rem;
+  line-height: 1rem;
+  color: black;
+  letter-spacing: 0;
+}
+
+h1,
+h2,
+h3 {}
+
+h1 {
+  font-size: 2.5rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  line-height: 2.5rem;
+
+}
+
+h2 {
+  font-size: 2rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  line-height: 2rem;
+
+}
+
+h3 {
+  font-size: 1.2rem;
+  font-weight: 400;
+  font-weight: 300;
+  line-height: 1.2rem;
+
+}
+
+h4 {
+  font-size: 1.1rem;
+  font-weight: 400;
+  line-height: 1.2rem;
+
+}
+
+h5 {
+  font-size: 0.7rem;
+  font-weight: 400;
+  color: #8e8e8e;
+
+}
+
+a:link {
+  color: powderblue;
+  text-decoration: none;
+}
+
+a:visited {
+  color: black;
+}
+
+a:hover,
+a:active {
+  color: black;
+}
+
+button {
+  font-size: 0.5rem;
+  text-transform: uppercase;
+  padding: 6px;
+  border: 1px solid silver;
+  border-radius: 20px;
+  transition: 0.7s;
+  color: black;
+  background: none;
+  cursor: pointer;
+}
+
+button:hover {
+  background-: black;
+  color: white;
+
+}
+
+ul li {
+  list-style: none;
+}
+
+#all_bodyy {
+  width: 100%;
+  height: 100%;
+}
+
+/* ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡstartㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ*/
+/* 모바일 버전 */
+@media (min-width:0px) and (max-width:1019px) {
+  body {
+    border: 5px solid black;
+    padding: 0 5%;
+    position: relative;
+    overflow-x: hidden;
+  }
+
+  .top_banner,
+  .pc_inp,
+  .second_section,
+  .menu_bar {
+    display: none;
+  }
+
+  header {
+    width: 100%;
+  }
+
+  .first_section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+  }
+
+  .first_section div img {
+    width: 50px;
+    height: 50px;
+  }
+
+
+  .icons_ {
+    display: flex;
+    font-size: 1.2rem;
+
+  }
+
+  .icons_> :nth-child(2),
+  .icons_> :nth-child(3) {
+    margin-left: 1rem;
+    cursor: pointer;
+  }
+
+  .open_serch {
+    width: 100%;
+    padding: 0.5rem;
+    position: absolute;
+    top: 0%;
+    left: 0;
+    right: 0;
+    background: white;
+    margin: 0;
+    border: 5px solid black;
+    border-top:none;
+    margin-top: -100%;
+    transition: 0.7s;
+    letter-spacing: 0;
+  }
+
+  .open_serching {
+    cursor: pointer;
+  }
+
+
+  .open_serching:hover {
+    color: rgba(0, 0, 0, 0.377);
+  }
+
+
+  .bottom_serch {
+    margin: 1.5rem 0;
+  }
+
+  .bottom_serch ul li {
+    margin-bottom: 0.5rem;
+  }
+
+  .top_serch {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .top_serch> :first-child {
+    width: 90%;
+  }
+
+  .top_serch> :last-child {
+    cursor: pointer;
+  }
+
+  .top_serch> :last-child:hover {
+    color: red;
+  }
+
+  .top_serch> :last-child i {
+    font-size: 1.5rem;
+  }
+
+  .mobile_inp {
+    width: 100%;
+    height: 30px;
+    padding: 0 5%;
+    font-family: fontAwesome;
+    background: rgba(0, 0, 0, 0.063);
+    border: none;
+    border-radius: 20px;
+  }
+
+  .mobile_inp:focus {
+    outline: none;
+  }
+
+  .mobile_inp::placeholder {
+    color: rgba(0, 0, 0, 0.325);
+  }
+
+
+  .open_hambuger {
+    width: 50%;
+    height: 100vh;
+    position: absolute;
+    top: 0%;
+    right: -100%;
+    overflow: hidden;
+    background:white;
+    z-index:9999;
+    border:4px solid black;
+    border-top: none;
+    padding:1rem 1rem 3rem 1rem;
+  }
+
+  .close_hambuger {
+    text-align: right;
+    
+  }
+
+  .close_hambuger i {
+    font-size: 1.5rem;
+    cursor: pointer;
+  }
+
+  .close_hambuger i:hover {
+    color:crimson;
+  }
+
+  .new_relases {
+    width: 100%;
+  }
+
+  .new_relases_wrap {
+    width: 100%;
+  }
+
+  .new_relases_wrap_flex {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .new_relases_title {
+    width: 100%;
+    height: 100%;
+    padding:1rem 0;
+    display: inline-block;
+  }
+
+  .new_relases_title p {
+    font-size: 4.2vw;
+    line-height: 4.2vw;
+    font-weight: 600;
+    cursor: pointer;
+  }
+
+  .new_relases_title p:hover {
+    color:#8e8e8e;
+  }
+
+  .new_relases_contents {
+    width: 100%;
+    margin-right: -120%;
+  }
+
+  .new_relases_contents ul li {
+    padding:0.4rem 0;
+  }
+
+  .new_relases_contents ul li a {
+    font-size: 3vw;
+    line-height: 3vw;
+    cursor: pointer;
+  }
+
+  .new_relases_contents ul li a:hover {
+    color:#8e8e8e;
+  }
+
+  .new_relases_contents_back {
+    text-align: right;
+    font-size: 1.5rem;
+    padding:1rem;
+  }
+
+  .new_relases_contents_back i{
+    cursor: pointer;
+  }
+
+  .new_relases_contents_back i:hover {
+    color:red;
+  }
+
+/* 메인 */
+
+  main {
+    width: 100%;
+    height: 700px;
+    border-right: 5px solid black;
+    border-left: 5px solid black;
+    border-top: 5px solid black;
+    border-bottom: 2.5px solid black;
+    
+    background: url('main_mobile.png') no-repeat;
+    background-size: cover;
+    background-position: center top;
+    cursor: pointer;
+  }
+
+/* 배너 */
+  .banner_first {
+    width: 100%;
+    height: 30vw;
+    border-right: 5px solid black;
+    border-left: 5px solid black;
+    border-top: 2.5px solid black;
+    border-bottom: 2.5px solid black;
+    background: url('article_01_mobile.png') no-repeat;
+    background-size: cover;
+    background-position: center center;
+  }
+
+  /* 에어맥스 */
+  .air_max_text_pc{
+    display: none;
+  }
+
+  .air_max {
+    width:100%;
+    height: 120vw;
+    border-right: 5px solid black;
+    border-left: 5px solid black;
+    border-top: 2.5px solid black;
+    border-bottom: 2.5px solid black;
+    display: flex;
+    flex-direction: column;
+    }
+.air_max_imge{
+  width: 100%;
+  height: 100%;
+  order:1;
+  border-bottom: 5px solid black;
+  background:url('article_02_mobile.png') no-repeat;
+  background-size: cover;
+  background-position: top center;
+  letter-spacing: 0;
+}
+
+.air_max_imge:hover {
+  cursor: pointer;
+}
+
+.air_max_text{
+  width: 100%;
+  padding:2rem 1rem;
+  text-align: center; 
+  order:2;
+}
+
+.air_max_text_mobile h4 {
+  font-size: 5vw;
+}
+
+.air_max_text button {
+  margin-top: 2rem;
+  width:25vw;
+  height: 10vw;
+  border:2px solid rgba(0, 0, 0, 0);
+  border-radius: 20vw;
+  background:black;
+  font-size: 4vw;
+  color:white;
+}
+
+.air_max_text button:hover {
+  background:white;
+  color:black;
+  border:2px solid black;
+}
+
+/* 스와이퍼 */
+.swiper-container {
+  width:100%;
+  height: 50vw;
+  border-right: 5px solid black;
+  border-left: 5px solid black;
+  border-top: 2.5px solid black;
+  border-bottom: 2.5px solid black;
+}
+.swiper-slide img {
+  width:100%;
+}
+
+.swiper-slide img:hover {
+  cursor: pointer;
+}
+
+.swiper-slide {
+  position: relative;
+}
+
+.sw_text {
+  font-size: 3vw;
+  position: absolute;
+  bottom:10%;
+  right: 10%;
+}
+
+.swiper-button-prev, .swiper-button-next {
+  top:10%;
+}
+
+:root {
+  --swiper-navigation-size:7vw;
+  --swiper-theme-color:black;
+}
+
+.swiper-button-prev:after{
+  font-family: fontAwesome;
+  content: "\f137";
+  text-transform: none !important;
+  letter-spacing: 0;
+  text-transform: none;
+  font-variant: initial;
+  line-height: 1;
+}
+
+.swiper-button-prev:hover {
+  --swiper-theme-color: #8e8e8e;
+}
+  .swiper-button-next:after{
+  font-family: fontAwesome;
+  content: "\f138";
+  text-transform: none !important;
+  letter-spacing: 0;
+  text-transform: none;
+  font-variant: initial;
+  line-height: 1;
+}
+.swiper-button-next:hover {
+  --swiper-theme-color: #8e8e8e;
+
+}
+
+/* 롤링 배너 나중에 뜯어보기  */
+@-webkit-keyframes ticker {
+  0% {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+    visibility: visible;
+  }
+  100% {
+    -webkit-transform: translate3d(-100%, 0, 0);
+    transform: translate3d(-100%, 0, 0);
+  }
+}
+@keyframes ticker {
+  0% {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+    visibility: visible;
+  }
+  100% {
+    -webkit-transform: translate3d(-100%, 0, 0);
+    transform: translate3d(-100%, 0, 0);
+  }
+}
+.ticker-wrap {
+  width: 100%;
+  overflow: hidden;
+  border-right: 5px solid black;
+  border-left: 5px solid black;
+  border-top: 2.5px solid black;
+  border-bottom: 2.5px solid black;
+  height: 80px;
+  background: white;
+}
+
+.ticker {
+  display: inline-block;
+  height: 4rem;
+  line-height: 4rem;
+  white-space: nowrap;
+  padding-right: 100%;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
+  -webkit-animation-name: ticker;
+  animation-name: ticker;
+  -webkit-animation-duration: 20s;
+  animation-duration: 20s;
+
+}
+.ticker_item {
+  display: inline-block;
+  padding: 0 2rem;
+  font-size: 2rem;
+  font-family: 'Dela Gothic One', cursive;
+  font-weight: 600;
+  color: black;
+}
+
+/* 구름 아티클 */
+
+.cloud {
+  width:100%;
+  height: 60vw;
+  background:url('cloud.png') no-repeat;
+  background-size: contain;
+  background-position: top center;
+  border-right: 5px solid black;
+  border-left: 5px solid black;
+  border-top: 2.5px solid black;
+  border-bottom: 2.5px solid black;
+}
+
+.cloud:hover {
+  cursor: pointer;
+}
+
+.dis_no{
+  display: none;
+}
+
+.product{
+  display: none;
+}
+
+ /* 스포츠  브라 */
+ .sport_bra {
+  width:100%;
+  height: 120vw;
+  border-right: 5px solid black;
+  border-left: 5px solid black;
+  border-top: 2.5px solid black;
+  border-bottom: 2.5px solid black;
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+.sport_bra_left{
+  display: none;
+}
+.sport_bra_text{
+  width:100%;
+  padding:2rem 0;
+  text-align: center;
+  position: relative;
+}
+
+.sport_bra_text h2 {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.sport_bra_btn {
+  margin-top: 4vw;
+}
+
+.sport_bra_btn button{
+  padding: 1vw 2vw;
+  font-size: 0.7rem;
+  font-weight: 600;
+  border-radius: 45px;
+  background: black;
+  color: white;
+  border: none;
+  border: 2px solid rgba(0, 0, 0, 0);
+  }
+  
+  .sport_bra_btn button:hover{
+    background:white;
+  color:black;
+  border:2px solid black; 
+  }
+
+
+.sport_bra_text h4 {
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+.sport_bra_right{
+  width:100%;
+  height: 100%;
+  background:url('sport_bra_right.png') no-repeat;
+  background-size:101% 101%;
+  background-position: center center;
+  border-bottom:5px solid black;
+  letter-spacing: 0;
+}
+
+/* 에어샵 */
+.air_shop {
+  width:100%;
+  display: flex;
+  justify-content: space-between;
+  border-right: 5px solid black;
+  border-left: 5px solid black;
+  border-top: 2.5px solid black;
+  border-bottom: 2.5px solid black;
+}
+ 
+.air_shop> :first-child{
+  display: none;
+  border:0;
+}
+.air_shop> :last-child{
+  width:100%;
+  height: 100%;
+}
+
+.air_shop_r_top {
+  width:100%;
+  height: 50vw;
+    background:url('air_shop_r_top.png') no-repeat;
+  background-size:100% 110%;
+  background-position: center center;  
+  position: relative;
+  border-bottom: 2.5px solid;
+}
+
+.air_shop_r_top button {
+position: absolute;
+left:2%;
+top:3%;
+padding: 1vw 2vw;
+font-size: 1rem;
+font-weight: 600;
+border-radius: 45px;
+background: black;
+color: white;
+border: none;
+border: 2px solid rgba(0, 0, 0, 0);
+}
+
+.air_shop_r_top button:hover{
+  background:white;
+color:black;
+border:2px solid black; 
+}
+
+.air_shop_r_bottom {
+  width:100%;
+  height: 50vw;
+  margin:0;
+  padding:0;
+  letter-spacing: 0;
+  background:url('air_shop_r_bottom_mobile.png') no-repeat;
+  background-size:101% 101%;
+  background-position: center center;
+  border-top: 2.5px solid black;
+}
+
+
+
+
+/* 모바일 푸터 */
+.mo_foo {
+  width:100%;
+  padding:0.5rem 0;
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  border-right: 5px solid black;
+  border-left: 5px solid black;
+  border-top: 2.5px solid black;
+  border-bottom: 5px solid black;
+}
+
+.mo_foo> :first-child {
+  width:65%;
+  padding:0.5rem 0;
+}
+.mo_foo> :first-child> h3  {
+  text-transform: uppercase;
+  font-size: 1.5vw;
+  font-weight: 600;
+  
+}
+.mo_foo> :last-child {
+  width:35%;
+  padding:1.5rem 0;
+  position: relative;
+  text-align: center;
+  font-size: 0.9rem;
+  font-weight: 600;
+  border-left: 2.5px solid black;
+}
+
+
+.mo_foo> :last-child div {
+  position: absolute;
+  top:2%;
+  right:10%;
+}
+
+.mo_foo> :last-child div i:hover {
+  color: #8e8e8e;
+  cursor: pointer;
+}
+
+.mo_foo> :last-child p {
+  width:80%;
+  margin:0 auto;
+  font-size: 3vw;
+}
+
+footer {
+  display: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
+
+/* ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ랩탑 버전 */
+@media (min-width:1020px) {
+
+
+  .hambuger,
+  .open_serch,
+  .open_hambuger {
+    display: none;
+  }
+
+  body {
+    border: 8px solid black;
+    
+  }
+
+  header {
+    position: relative;
+  }
+
+  .top_banner {
+    border-bottom: 5px solid black;
+    background: black;
+    align-items: center;
+    line-height: 0;
+    letter-spacing: 0;
+  }
+
+  .top_banner h4 {
+    text-align: center;
+    color: white;
+    font-size: 0.7rem;
+  }
+
+  .first_section {
+    width: 1000px;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 2rem;
+    align-items: center;
+    margin: 0 auto;
+    font-family: 'Dela Gothic One', cursive;
+  }
+
+  .first_section div img {
+    width: 90px;
+    height: 50px;
+  }
+
+  .menu_ {
+    display: flex;
+
+  }
+
+
+  .menu_ >li {
+    width: 100%;
+    padding: 1rem 0;
+    margin: 0 1rem;
+    background: white;
+    white-space: nowrap;
+    
+  }
+
+  .menu_contents {
+    width:100%;
+    padding:50px 0;
+    position: absolute;
+    top: 50.5%;
+    right: 0%;
+    left: 0%;
+    display: none;
+    background: white;
+    font-family: 'Noto Sans KR', sans-serif;
+    text-align: center;
+    border: 5px solid black;
+  }
+
+
+  .menu_contents>ul {
+    display: inline-block;
+    text-align: left;
+    vertical-align: text-top;
+    margin: 0 1rem;
+  }
+
+  .menu_contents>ul>li {
+    padding: 0.5rem 0;
+
+  }
+
+  .menu_contents>ul>li a {
+    color: #8e8e8e;
+    padding: 0.3rem 0;
+  }
+
+  .menu_contents>ul>li a:hover {
+    color: black;
+  }
+
+  .menu_contents>ul> :first-child {
+    font-size: 1.2rem;
+    font-weight: 600;
+    padding: 1rem 0;
+    color: black;
+  }
+
+
+  .first_section> :nth-child(3) {
+    width: 100px;
+    align-items: center;
+    position: relative;
+  }
+
+  .first_section> :nth-child(3) input {
+    width: 70px;
+    border: none;
+    border-bottom: 5px solid black;
+  }
+
+  .first_section> :nth-child(3) input:focus {
+    outline: none;
+  }
+
+  .first_section> :nth-child(3) i {
+    font-size: 1.3rem;
+    position: absolute;
+    bottom: 0%;
+    right: 0%;
+    cursor: pointer;
+  }
+
+  .first_section> :nth-child(3) i:hover{
+    color:rgba(0, 0, 0, 0.39);
+  }
+
+  .second_section {
+    width: 1000px;
+    margin: 0 auto;
+  }
+
+  .second_section div {
+    width: 500px;
+    display: flex;
+    justify-content: space-around;
+    margin: 0 auto;
+  }
+
+  .second_section div p {
+    padding: 0.7rem 0.3rem;
+    border-bottom: 4px solid rgba(241, 222, 222, 0);
+    cursor: pointer;
+    transition: 0.7s;
+    font-weight: 600;
+  }
+
+  .second_section div p:hover {
+    border-bottom: 4px solid rgb(0, 0, 0, 1);
+  }
+
+
+  /* 메인 */
+  main {
+    width: 100%;
+    height: 50vw;
+    border-top: 8px solid black;
+    border-bottom: 4px solid black;
+    border-right: none;
+    border-left: none;
+    background: url('main_pc.png') no-repeat;
+    background-size: cover;
+    background-position: center center;
+  }
+
+  /* 배너 */
+  .banner_first {
+    width: 100%;
+    height: 200px;
+    border-top: 4px solid black;
+    border-bottom: 4px solid black;
+    border-right: none;
+    border-left: none;
+    background: url('article_01_pc.png') no-repeat;
+    background-size: cover;
+    background-position: center center;
+  }
+
+  /* 아티클 에어맥스 */
+  .air_max_text_mobile{
+    display: none;
+  }
+  .air_max {
+    width:100%;
+    height: 35vw;
+    display: flex;
+    border-top: 4px solid black;
+    border-bottom: 4px solid black;
+    border-right: none;
+    border-left: none;
+  }
+
+  .air_max_text{
+    width:35%;
+    text-align: center;
+    padding:5.5vw 1.5vw;
+  }
+
+  .air_max_text h2 {
+    margin-bottom: 1.2vw;
+    font-size: 3vw;
+    line-height: 3vw;
+  }
+
+  
+  .air_max_text h4 {
+    margin-bottom: 0.8rem;
+    font-size: 1.3vw;
+    line-height: 1.5vw;
+  }
+
+  .air_max_text button {
+    padding:20px 35px;
+    font-size: 1.5rem;
+    font-weight: 600;
+    border-radius: 45px;
+    background:black;
+    color:white;
+    border:none;
+    margin-top: 3rem;
+    border:1px solid rgba(0, 0, 0, 0);
+  }
+
+  .air_max_text button:hover {
+    background:white;
+    color:black;
+    border:2px solid black; 
+  }
+  .air_max_imge{
+    width:65%;
+    background:url('article_02_pc.png') no-repeat;
+    background-size: cover;
+    background-position: center center;
+    
+  }
+
+  .swiper-container {
+    display: none;
+  }
+
+
+  /* 롤링 배너 나중에 뜯어보기  */
+@-webkit-keyframes ticker {
+  0% {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+    visibility: visible;
+  }
+  100% {
+    -webkit-transform: translate3d(-100%, 0, 0);
+    transform: translate3d(-100%, 0, 0);
+  }
+}
+@keyframes ticker {
+  0% {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+    visibility: visible;
+  }
+  100% {
+    -webkit-transform: translate3d(-100%, 0, 0);
+    transform: translate3d(-100%, 0, 0);
+  }
+}
+.ticker-wrap {
+  width: 100%;
+  overflow: hidden;
+  border-top: 4px solid black;
+  border-bottom: 4px solid black;
+  border-right: none;
+  border-left: none;
+  height: 80px;
+  background: white;
+}
+
+.ticker {
+  display: inline-block;
+  height: 4rem;
+  line-height: 4rem;
+  white-space: nowrap;
+  padding-right: 100%;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
+  -webkit-animation-name: ticker;
+  animation-name: ticker;
+  -webkit-animation-duration: 40s;
+  animation-duration: 40s;
+
+}
+.ticker_item {
+  display: inline-block;
+  padding: 0 2rem;
+  font-size: 2rem;
+  font-family: 'Dela Gothic One', cursive;
+  font-weight: 600;
+  color: black;
+  padding-left:-100%;
+}
+
+.cloud {
+  width:100%;
+  height: 40vw;
+  background:url('cloud_pc.png') no-repeat;
+  background-size: contain;
+  background-position: top center;
+  border-top: 4px solid black;
+  border-bottom: 4px solid black;
+  border-right: none;
+  border-left: none;
+}
+
+/* 프로덕트  */
+.product {
+  width:100%;
+  height: 40vw;
+  border-top: 4px solid black;
+  border-bottom: 4px solid black;
+  border-right: none;
+  border-left: none;
+}
+
+.product section {
+  width:70%;
+  display: flex;
+  justify-content: space-between;
+  margin:0 auto;
+  padding:1.2rem 0;
+}
+
+
+.product section> div {
+  width:30%;
+  position: relative;
+  border:4px solid black;
+  cursor: pointer;
+}
+
+.horv_div {
+  width:100%;
+  height: 100%;
+  background-color: black;
+  position: absolute;
+  top:0%;
+  left:0%;
+  opacity: 0;
+}
+
+.product_imge{
+  width:100%;
+  height: 30vw;
+  background:url('pro_01.png') no-repeat;
+  background-size: 190%;
+  background-position: center center;
+}
+
+.product section> :first-child:hover .horv_div {
+  opacity: 0.3;
+}
+.product section> :first-child:hover .product_imge {
+  background-size: 200%;
+}
+.product section> :first-child:hover .product_text h4 {
+  z-index: 9999;
+  color:white;
+}
+.product section> :first-child:hover .product_text i {
+  z-index: 9999;
+  color:white;
+}
+
+.product section> :nth-child(2):hover .horv_div {
+  opacity: 0.3;
+}
+.product section> :nth-child(2):hover .product_imge_2 {
+  background-size: 220%;
+}
+.product section> :nth-child(2):hover .product_text h4 {
+  z-index: 9999;
+  color:white;
+}
+.product section> :nth-child(2):hover .product_text i {
+  z-index: 9999;
+  color:white;
+}
+
+
+.product section> :nth-child(3):hover .horv_div {
+  opacity: 0.3;
+}
+.product section> :nth-child(3):hover .product_imge_3 {
+  background-size: 160%;
+}
+.product section> :nth-child(3):hover .product_text h4 {
+  z-index: 9999;
+  color:white;
+}
+.product section> :nth-child(3):hover .product_text i {
+  z-index: 9999;
+  color:white;
+}
+
+
+.product_imge_2{
+  width:100%;
+  height: 30vw;
+  background:url('pro_02.png') no-repeat;
+  background-size: 200%;
+  background-position: center center;
+}
+
+.product_imge_3{
+  width:100%;
+  height: 30vw;
+  background:url('pro_03.png') no-repeat;
+  background-size:150%;
+  background-position: center center;
+}
+
+.product_text {
+  width:100%;
+  padding:1.5rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.product_text i {
+  font-size: 1.5rem;
+}
+
+/* 에어샵 */
+.air_shop {
+  width:100%;
+  height: 50vw;
+  display: flex;
+  justify-content: space-between;
+  border-top: 4px solid black;
+  border-bottom: 4px solid black;
+  border-right: none;
+  border-left: none;
+}
+
+.air_shop> :first-child{
+  width:40%;
+  height: 100%;
+  background:url('air_shop_l.png') no-repeat;
+  background-size:100%;
+  background-position: center center;
+  position: relative;
+  border-right: 2px solid black;
+}
+
+.air_shop> :first-child div{
+  position: absolute;
+  top:75%;
+  left:50%;
+  transform: translate(-50%,-50%);
+}
+
+.air_shop> :first-child div button {
+  padding: 20px 35px;
+  font-size: 1.5rem;
+  font-weight: 600;
+  border-radius: 45px;
+  background: black;
+  color: white;
+  border: none;
+  margin-top: 3rem;
+  border: 1px solid rgba(0, 0, 0, 0);
+}
+
+.air_shop> :first-child div button:hover{
+background:white;
+color:black;
+border:2px solid black; 
+}
+
+.air_shop> :last-child{
+  width:60%;
+  border-left: 2px solid black;
+}
+
+.air_shop_r_top {
+  width:100%;
+  height: 20vw;
+  background:url('air_shop_r_top.png') no-repeat;
+  background-size:100% 110%;
+  background-position: center center;  
+  position: relative;
+  border-bottom: 2px solid black;
+}
+
+.air_shop_r_top button {
+position: absolute;
+right:2%;
+bottom:5%;
+padding: 10px 20px;
+font-size: 1rem;
+font-weight: 600;
+border-radius: 45px;
+background: black;
+color: white;
+border: none;
+border: 2px solid rgba(0, 0, 0, 0);
+}
+
+.air_shop_r_top button:hover{
+  background:white;
+color:black;
+border:2px solid black; 
+}
+
+.air_shop_r_bottom {
+  width:100%;
+  height: 29.5vw;
+  background:url('air_shop_r_bottom.png') no-repeat;
+  background-size:101% 100%;
+  background-position: center;
+  border-top: 2px solid black;
+  letter-spacing: 0;
+}
+
+
+
+ /* 스포츠  브라 */
+.sport_bra {
+  width:100%;
+  height: 40vw;
+  display: flex;
+  justify-content: space-between;
+  border-top: 4px solid black;
+  border-bottom: 4px solid black;
+  border-right: none;
+  border-left: none;
+}
+
+.sport_bra_left{
+  width:40%;
+  background:url('sport_bra_left.png') no-repeat;
+  background-size:100% 100%;
+  background-position: center center;
+  border-right: 4px solid black;
+  letter-spacing: 0;
+  margin:0;
+  padding:0;
+}
+.sport_bra_text{
+  width:20%;
+  padding:8rem 0;
+  text-align: center;
+  position: relative;
+}
+
+.sport_bra_text h2 {
+  font-size: 2vw;
+  line-height: 2.4vw;
+  margin-bottom: 1rem;
+}
+
+.sport_bra_btn {
+  margin-top: 6vw;
+  text-align: center;
+}
+
+.sport_bra_btn button{
+  padding: 20px 30px;
+  font-size: 1.2vw;
+  font-weight: 600;
+  border-radius: 45px;
+  background: black;
+  color: white;
+  border: none;
+  border: 2px solid rgba(0, 0, 0, 0);
+  }
+  
+  .sport_bra_btn button:hover{
+    background:white;
+  color:black;
+  border:2px solid black; 
+  }
+
+
+.sport_bra_text h4 {
+  font-size: 1.3vw;
+  font-weight: 600;
+  line-height: 1.5vw;
+  margin-top: 0.5rem;
+}
+.sport_bra_right{
+  width:40%;
+  background:url('sport_bra_right.png') no-repeat;
+  background-size:100% 100%;
+  background-position: center center;
+  border-left: 4px solid black;
+  letter-spacing: 0;
+  margin:0;
+  padding:0;
+}
+
+.dis_no_pc,
+.mo_foo{
+  display: none;
+}
+
+footer {
+  width:100%;
+  padding:0 5%;
+  display: flex;
+  justify-content: space-between;
+  border-top: 4px solid black;
+  border-bottom: none;
+  border-right: none;
+  border-left: none;
+}
+
+.foo_text{
+  width:40%;
+  height: 100%;
+}
+
+.foo_text_u {
+  width:100%;
+  display: flex;
+  justify-content: space-between;
+  padding:1.2rem 0;
+}
+
+.foo_text_u> li {
+  width:50%;
+  text-align: center;
+}
+
+.foo_text_u> li> ul> li {
+  margin-bottom: 1rem;
+}
+
+.foo_text_u> li> ul> li> a{
+  font-size: 1.2vw;
+  font-weight: 600;
+}
+
+.foo_text_u> li> ul> li> a:hover{
+  color: #8e8e8e;
+}
+
+.foo_btn{
+  width:52%;
+  position: relative;
+}
+.foo_btn_wrap {
+  width:100%;
+  height: 60%;
+  text-align:center;
+}
+
+.foo_btn_wrap button {
+  width:5vw;
+  height: 2vw;
+  padding:0;
+  border-radius: 0;
+  position: relative;
+  border:none;
+  margin:0 0.5rem;
+  font-size: 1vw;
+  font-weight: 600;
+}
+
+.foo_btn_wrap button:hover {
+  color: #8e8e8e;
+}
+
+.foo_btn_wrap button:active {
+  border:none;
+}
+
+
+.foo_btn_wrap button::before{
+  content : "";
+  position: absolute;
+  left    : 0;
+  top     : 0;
+  height  : 30%;
+  width   : 10%;  
+  border-left:3px solid black;
+  border-top: 3px solid black;
+}
+
+.foo_btn_wrap button::after{
+  content : "";
+  position: absolute;
+  right   : 0;
+  bottom  : 0;
+  height  : 30%;
+  width   : 10%;  
+  border-right:3px solid black;
+  border-bottom: 3px solid black;
+}
+
+.foo_btn_vertical_line {
+  width:100%;
+  height: 40%;
+}
+
+.foo_btn_vertical_line_wrap{
+  width:13vw;
+  height: 100%;
+  margin:0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.foo_btn_vertical_line_wrap div {
+  width:2px;
+  height: 100%;
+  background-color: black;
+}
+
+
+.foo_sns{
+  width:40%;
+  height: 100%;
+  padding:1.2rem 0;
+}
+
+.foo_sns h3 {
+  width: 40%;
+  padding:0 0 1rem 0;
+  font-size: 1.5vw;
+  font-weight: 600;
+  border-bottom: 3px solid black;
+  margin-bottom: 2rem;
+}
+
+.foo_sns_imge img {
+  width:50px;
+  height: 50px;
+  margin-right: 1rem;
+  cursor: pointer;
+}
+
+.foo_sns_imge img:hover {
+  opacity: 0.5;
+}
+
+
+
+
+
+}

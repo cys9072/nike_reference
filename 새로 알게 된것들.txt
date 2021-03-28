@@ -1,0 +1,135 @@
+    폰트 어썸으로 가상클래스에 넣기
+    .p1::before {
+    content: "\f054";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    }
+
+  Solid → 900
+Regular, Brands → 400
+Light → 300
+
+
+--------
+검색창 만들때 인풋안에 아이콘 넣기
+
+.mobile_inp {
+  width:80%;
+  height: 25px;
+  font-family: fontAwesome;
+}
+
+.mobile_inp::placeholder {
+  color:rgba(0, 0, 0, 0.325);
+}
+
+->인풋 자체에 폰트 패밀리 넣어주고 
+가상 클래스 요소에 색상 바꿔 주면 됨
+------------
+------------
+인풋에 아웃라인 없애기
+input:focus {
+  outline: none;
+}
+
+클릭했을때 커서만 깜박 거리고 아웃라인은 비활성화 된다. 개꿀
+
+
+-------------------------------
+같은 설계로 모바일 pc했을때 
+js도 css같이 width값에 따라 함수를 적용하고 싶다. 
+방법 찾자
+
+ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ
+
+스와이퍼 라이브러리 페이지버튼 커스텀 방법
+
+버튼 위치 이동
+.swiper-button-prev, .swiper-button-next {
+  top:10%;
+}
+
+버튼 색, 크기 변경
+:root {
+  --swiper-navigation-size:20px;
+  --swiper-theme-color:black;
+}
+
+
+버튼 폰트어썸으로 아이콘 바꾸기.
+.swiper-button-prev:after{
+  font-family: fontAwesome;
+  content: "\f137";
+  text-transform: none !important;
+  letter-spacing: 0;
+  text-transform: none;
+  font-variant: initial;
+  line-height: 1;
+}
+
+  .swiper-button-next:after{
+  font-family: fontAwesome;
+  content: "\f138";
+  text-transform: none !important;
+  letter-spacing: 0;
+  text-transform: none;
+  font-variant: initial;
+  line-height: 1;
+}
+
+
+버튼 호버값 주기
+.swiper-button-prev:hover {
+  --swiper-theme-color: #8e8e8e;
+}
+.swiper-button-next:hover {
+  --swiper-theme-color: #8e8e8e;
+
+}
+ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ
+공백태그
+&nbsp
+ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ
+호버값 따로 주기 css
+
+A가 B영역 안 바로 다음에 있을때
+A:hover > 태그{}
+
+
+A가 B영역 밖에 잇을때
+A:hover + 태그{}
+
+A가 B영역에 잇을때
+A:hover 공란 태그{}
+
+
+A가 B 자손 일 때
+A:hover ~ 태그{}
+
+ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ
+
+.foo_btn_wrap button::before{
+  content : "";
+  position: absolute;
+  left    : 0;
+  top     : 0;
+  height  : 30%;
+  width   : 10%;  
+  border-left:3px solid black;
+  border-top: 3px solid black;
+}
+
+.foo_btn_wrap button::after{
+  content : "";
+  position: absolute;
+  right   : 0;
+  bottom  : 0;
+  height  : 30%;
+  width   : 10%;  
+  border-right:3px solid black;
+  border-bottom: 3px solid black;
+}
+
+보더로 왼쪽30%위쪽30% 오른쪽 30% 아래30%의 보더선을 만들수있음
+
+
